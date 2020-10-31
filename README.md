@@ -45,6 +45,13 @@ Each section has a commented header that describes what the code below it will d
   - Trade options with the same criteria - would need a different API
   - Find a way to scan more than Alpaca's 200 stock limit at one time<br>
   <br>
+
+Sean's implementation list:
+- Change to focus on 1 stock
+- Implement in live trading with simple, risk adverse trading algo.
+- Run ML algo for that stock, start with something simple using sample risk adverse trading algo.
+- Scale
+
 This will certainly be a long-term project for me as I look for ways to improve the bot and make it more efficient - if you have any ideas yourself, feel free to submit a pull request or email me at abzdel@bryant.edu. Thank you for your interest!
 
 ## Programs & Packages
