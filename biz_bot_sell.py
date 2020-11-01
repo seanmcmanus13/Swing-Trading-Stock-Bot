@@ -42,6 +42,7 @@ current_price = [float(i) for i in current_price]
 current_holdings_df['current_price'] = current_price
 
 
+
 ##################################################-SCRAPE DATA FOR CURRENT HOLDINGS-##################################################
 symbols = current_holdings
 
@@ -54,8 +55,27 @@ r=requests.get(day_bars_url, headers=config.HEADERS) # use requests module to se
 data = r.json() # gives us the data in a dictionary
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##################################################-SET UP DATA CONTAINERS-##################################################
-df = pd.DataFrame() # create empty dataframe
+d
+
+f = pd.DataFrame() # create empty dataframe
 # create empty lists for each piece of data we're scraping
 time_list = []
 open_list = []
@@ -116,8 +136,9 @@ today = str(date.today())
 df = df.loc[df['time']==today] # we only want today's records
 
 df = df.merge(current_holdings_df, on='symbol', how='inner')
+##-------------------------------------------------   ML ALGO HERE     -------------------------------------------------##
 
-
+##-------------------------------------------------     EDIT THIS      -------------------------------------------------##
 ##################################################-CRITERIA FOR SELLING-##################################################
 sell_df = df.loc[
 

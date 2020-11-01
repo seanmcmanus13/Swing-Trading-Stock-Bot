@@ -9,6 +9,11 @@ import alpaca_trade_api as tradeapi
 api = tradeapi.REST(config.APCA_API_KEY_ID, config.APCA_API_SECRET_KEY, config.APCA_API_BASE_URL) # set URLs
 portfolio = api.list_positions()
 
+##----------------------------------------- CHANGE THIS TO WORK ON ONE STOCK ------------------------------------------##
+##Check how outputs from this script affect inputs to other script.
+##We want to change this to arb the stock based on real time information OR other signals that indicate directional movement
+##the day before. Consider utilizing rolling twitch streaming data
+##---------------------------------------------------------------------------------------------------------------------##
 
 ##################################################-GET LIST OF SYMBOLS-##################################################
 holdings=open('data/holdings.csv').readlines() # read csv of QQQ holdings - should be able to use any csv
